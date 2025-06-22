@@ -52,4 +52,5 @@ dependencies {
     androidTestImplementation(libs.androidx.espresso.core)
     implementation("org.tensorflow:tensorflow-lite:2.15.0")
     implementation("org.tensorflow:tensorflow-lite-gpu:2.15.0")
+    implementation("androidx.core:core-splashscreen:1.0.1")
 }
