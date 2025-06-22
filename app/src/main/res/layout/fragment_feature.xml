@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".FeatureFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+        <ImageButton
+            android:id="@+id/btn_toolbar_back"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/ic_menu_back"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="Kembali"
+            android:layout_centerVertical="true"
+            android:layout_alignParentStart="true"
+            app:tint="?attr/colorPrimary" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fitur"
+            android:textSize="24sp"
+            android:fontFamily="@font/montserrat_bold"
+            android:layout_centerInParent="true"
+            android:textColor="?android:attr/textColorPrimary"/>
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                app:strokeWidth="1dp"
+                app:strokeColor="@color/material_on_surface_stroke">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="1. Temperature"
+                        android:textSize="18sp"
+                        android:fontFamily="@font/montserrat_bold"
+                        android:layout_marginBottom="8dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Suhu udara dapat mempengaruhi kecepatan reaksi kimia yang membentuk polutan sekunder di atmosfer, seperti ozon dan partikel halus."
+                        android:textSize="16sp"
+                        android:fontFamily="@font/montserrat_regular"
+                        android:justificationMode="inter_word"
+                        android:lineSpacingExtra="4dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Tipe Data: Float"
+                        android:fontFamily="@font/montserrat_regular"
+                        android:layout_marginTop="12dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Bentuk Nilai Fitur: Numerik"
+                        android:fontFamily="@font/montserrat_regular"/>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                app:strokeWidth="1dp"
+                app:strokeColor="@color/material_on_surface_stroke">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="2. Humidity"
+                        android:textSize="18sp"
+                        android:fontFamily="@font/montserrat_bold"
+                        android:layout_marginBottom="8dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Kelembapan udara mempengaruhi ukuran dan komposisi partikel polutan. Kelembapan tinggi dapat menyebabkan partikel menyerap air dan menjadi lebih besar."
+                        android:textSize="16sp"
+                        android:fontFamily="@font/montserrat_regular"
+                        android:justificationMode="inter_word"
+                        android:lineSpacingExtra="4dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Tipe Data: Float"
+                        android:fontFamily="@font/montserrat_regular"
+                        android:layout_marginTop="12dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Bentuk Nilai Fitur: Numerik"
+                        android:fontFamily="@font/montserrat_regular"/>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                app:strokeWidth="1dp"
+                app:strokeColor="@color/material_on_surface_stroke">
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="16dp">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="3. PM2.5" android:textSize="18sp" android:fontFamily="@font/montserrat_bold" android:layout_marginBottom="8dp"/>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Partikel materi berukuran kurang dari 2.5 mikrometer. Sangat berbahaya karena dapat masuk jauh ke dalam sistem pernapasan dan aliran darah." android:textSize="16sp" android:fontFamily="@font/montserrat_regular" android:justificationMode="inter_word" android:lineSpacingExtra="4dp"/>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Tipe Data: Float" android:fontFamily="@font/montserrat_regular" android:layout_marginTop="12dp"/>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Bentuk Nilai Fitur: Numerik" android:fontFamily="@font/montserrat_regular"/>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                app:strokeWidth="1dp"
+                app:strokeColor="@color/material_on_surface_stroke">
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="16dp">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="4. PM10" android:textSize="18sp" android:fontFamily="@font/montserrat_bold" android:layout_marginBottom="8dp"/>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Partikel materi berukuran kurang dari 10 mikrometer, termasuk debu, serbuk sari, dan jamur. Dapat mengiritasi mata, hidung, dan tenggorokan." android:textSize="16sp" android:fontFamily="@font/montserrat_regular" android:justificationMode="inter_word" android:lineSpacingExtra="4dp"/>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Tipe Data: Float" android:fontFamily="@font/montserrat_regular" android:layout_marginTop="12dp"/>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Bentuk Nilai Fitur: Numerik" android:fontFamily="@font/montserrat_regular"/>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                app:strokeWidth="1dp"
+                app:strokeColor="@color/material_on_surface_stroke">
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="16dp">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="5. NO2 (Nitrogen Dioxide)" android:textSize="18sp" android:fontFamily="@font/montserrat_bold" android:layout_marginBottom="8dp"/>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Gas yang terutama berasal dari emisi kendaraan bermotor dan pembangkit listrik. Berkontribusi pada pembentukan kabut asap dan hujan asam." android:textSize="16sp" android:fontFamily="@font/montserrat_regular" android:justificationMode="inter_word" android:lineSpacingExtra="4dp"/>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Tipe Data: Float" android:fontFamily="@font/montserrat_regular" android:layout_marginTop="12dp"/>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Bentuk Nilai Fitur: Numerik" android:fontFamily="@font/montserrat_regular"/>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                app:strokeWidth="1dp"
+                app:strokeColor="@color/material_on_surface_stroke">
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="16dp">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="6. SO2 (Sulfur Dioxide)" android:textSize="18sp" android:fontFamily="@font/montserrat_bold" android:layout_marginBottom="8dp"/>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Gas yang dihasilkan dari pembakaran bahan bakar fosil yang mengandung sulfur, seperti batu bara. Menyebabkan masalah pernapasan dan hujan asam." android:textSize="16sp" android:fontFamily="@font/montserrat_regular" android:justificationMode="inter_word" android:lineSpacingExtra="4dp"/>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Tipe Data: Float" android:fontFamily="@font/montserrat_regular" android:layout_marginTop="12dp"/>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Bentuk Nilai Fitur: Numerik" android:fontFamily="@font/montserrat_regular"/>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                app:strokeWidth="1dp"
+                app:strokeColor="@color/material_on_surface_stroke">
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="16dp">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="7. CO (Carbon Monoxide)" android:textSize="18sp" android:fontFamily="@font/montserrat_bold" android:layout_marginBottom="8dp"/>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Gas beracun yang tidak berwarna dan tidak berbau, dihasilkan oleh pembakaran yang tidak sempurna. Berbahaya karena mengurangi kemampuan darah membawa oksigen." android:textSize="16sp" android:fontFamily="@font/montserrat_regular" android:justificationMode="inter_word" android:lineSpacingExtra="4dp"/>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Tipe Data: Float" android:fontFamily="@font/montserrat_regular" android:layout_marginTop="12dp"/>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Bentuk Nilai Fitur: Numerik" android:fontFamily="@font/montserrat_regular"/>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                app:strokeWidth="1dp"
+                app:strokeColor="@color/material_on_surface_stroke">
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="16dp">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="8. Proximity to Industrial Areas" android:textSize="18sp" android:fontFamily="@font/montserrat_bold" android:layout_marginBottom="8dp"/>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Jarak ke area industri. Semakin dekat suatu lokasi dengan area industri, semakin tinggi potensi paparannya terhadap berbagai polutan industri." android:textSize="16sp" android:fontFamily="@font/montserrat_regular" android:justificationMode="inter_word" android:lineSpacingExtra="4dp"/>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Tipe Data: Float" android:fontFamily="@font/montserrat_regular" android:layout_marginTop="12dp"/>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Bentuk Nilai Fitur: Numerik" android:fontFamily="@font/montserrat_regular"/>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                app:strokeWidth="1dp"
+                app:strokeColor="@color/material_on_surface_stroke">
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="16dp">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="9. Population Density" android:textSize="18sp" android:fontFamily="@font/montserrat_bold" android:layout_marginBottom="8dp"/>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Kepadatan penduduk di suatu area. Area yang padat penduduknya cenderung memiliki tingkat polusi lebih tinggi karena aktivitas transportasi dan domestik." android:textSize="16sp" android:fontFamily="@font/montserrat_regular" android:justificationMode="inter_word" android:lineSpacingExtra="4dp"/>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Tipe Data: Integer" android:fontFamily="@font/montserrat_regular" android:layout_marginTop="12dp"/>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Bentuk Nilai Fitur: Numerik" android:fontFamily="@font/montserrat_regular"/>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

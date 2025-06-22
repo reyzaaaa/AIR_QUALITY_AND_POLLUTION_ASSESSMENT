@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.prediksikualitasair.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_mainMenuFragment"
+            app:destination="@id/mainMenuFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_mainMenuFragment2"
+            app:destination="@id/mainMenuFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/simulationFragment2"
+        android:name="com.example.prediksikualitasair.SimulationFragment"
+        android:label="fragment_simulation"
+        tools:layout="@layout/fragment_simulation" />
+    <fragment
+        android:id="@+id/mainMenuFragment"
+        android:name="com.example.prediksikualitasair.MainMenuFragment"
+        android:label="fragment_main_menu"
+        tools:layout="@layout/fragment_main_menu" >
+        <action
+            android:id="@+id/action_mainMenuFragment_to_simulationFragment2"
+            app:destination="@id/simulationFragment2" />
+        <action
+            android:id="@+id/action_mainMenuFragment_to_aboutFragment"
+            app:destination="@id/aboutFragment" />
+        <action
+            android:id="@+id/action_mainMenuFragment_to_datasetFragment"
+            app:destination="@id/datasetFragment" />
+        <action
+            android:id="@+id/action_mainMenuFragment_to_featureFragment"
+            app:destination="@id/featureFragment" />
+        <action
+            android:id="@+id/action_mainMenuFragment_to_modelFragment"
+            app:destination="@id/modelFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/aboutFragment"
+        android:name="com.example.prediksikualitasair.AboutFragment"
+        android:label="fragment_about"
+        tools:layout="@layout/fragment_about" />
+    <fragment
+        android:id="@+id/datasetFragment"
+        android:name="com.example.prediksikualitasair.DatasetFragment"
+        android:label="fragment_dataset"
+        tools:layout="@layout/fragment_dataset" />
+    <fragment
+        android:id="@+id/featureFragment"
+        android:name="com.example.prediksikualitasair.FeatureFragment"
+        android:label="fragment_feature"
+        tools:layout="@layout/fragment_feature" />
+    <fragment
+        android:id="@+id/modelFragment"
+        android:name="com.example.prediksikualitasair.ModelFragment"
+        android:label="fragment_model"
+        tools:layout="@layout/fragment_model" />
+</navigation>
