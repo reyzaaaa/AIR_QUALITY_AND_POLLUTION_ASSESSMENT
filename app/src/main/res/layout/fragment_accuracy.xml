@@ -1,0 +1,38 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Evaluasi Akurasi Model"
+            android:textSize="20sp"
+            android:fontFamily="@font/montserrat_bold"
+            android:layout_marginBottom="16dp"/>
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#F0F0F0"
+            android:layout_marginBottom="8dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="12dp"
+                android:fontFamily="monospace"
+                android:textColor="#333333"
+                android:text='test_loss, test_accuracy = model.evaluate(...)\n\n# --- Output --- #\n# 32/32 ... accuracy: 0.9353 - loss: 0.4612\n# Akurasi Model: 0.9350\n# Loss Model: 0.4479'/>
+        </HorizontalScrollView>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat_regular"
+            android:textSize="16sp"
+            android:lineSpacingExtra="4dp"
+            android:justificationMode="inter_word"
+            android:text="Setelah dilatih, model diuji menggunakan data yang belum pernah dilihat sebelumnya (data uji) untuk mengukur kinerjanya.\n\n•  **Akurasi 0.9350**: Ini berarti model berhasil memprediksi kategori kualitas udara dengan benar sebanyak 93.5% pada data uji. Ini adalah tingkat akurasi yang sangat baik.\n\n•  **Loss 0.4479**: Ini adalah angka yang merepresentasikan 'kesalahan' atau 'error' dari model. Semakin kecil nilainya, semakin baik performa model."/>
+    </LinearLayout>
+</ScrollView>

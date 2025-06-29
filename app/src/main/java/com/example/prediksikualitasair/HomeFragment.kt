@@ -1,4 +1,4 @@
-package com.example.prediksikualitasair // Pastikan package name ini sesuai dengan proyek Anda
+package com.example.prediksikualitasair
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -8,9 +8,7 @@ import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
 import com.example.prediksikualitasair.databinding.FragmentHomeBinding
 
-/**
- * Ini adalah Fragment untuk halaman pembuka (logo dan judul).
- */
+
 class HomeFragment : Fragment() {
 
     private var _binding: FragmentHomeBinding? = null
