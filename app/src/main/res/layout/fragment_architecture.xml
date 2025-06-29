@@ -1,0 +1,25 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Arsitektur Model"
+            android:textSize="20sp"
+            android:fontFamily="@font/montserrat_bold"
+            android:layout_marginBottom="8dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat_regular"
+            android:textSize="16sp"
+            android:lineSpacingExtra="4dp"
+            android:justificationMode="inter_word"
+            android:text="Model yang digunakan adalah Artificial Neural Network (ANN) dengan arsitektur Deep Learning. Model ini terdiri dari satu lapisan input, lima lapisan tersembunyi (hidden layers) dengan fungsi aktivasi ReLU, dan satu lapisan output dengan fungsi aktivasi Softmax. Arsitektur berlapis ini dirancang untuk mempelajari pola yang sangat kompleks dari 9 fitur input untuk mengklasifikasikan kualitas udara ke dalam 4 kategori yang berbeda."/>
+    </LinearLayout>
+</ScrollView>

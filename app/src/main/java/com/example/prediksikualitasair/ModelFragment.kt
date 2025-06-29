@@ -7,6 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
 import com.example.prediksikualitasair.databinding.FragmentModelBinding
+import com.google.android.material.tabs.TabLayoutMediator
 
 class ModelFragment : Fragment() {
 
@@ -27,6 +28,18 @@ class ModelFragment : Fragment() {
         binding.btnToolbarBack.setOnClickListener {
             findNavController().navigateUp()
         }
+
+        val modelPagerAdapter = ModelPagerAdapter(this)
+        binding.viewPager.adapter = modelPagerAdapter
+
+        TabLayoutMediator(binding.tabLayout, binding.viewPager) { tab, position ->
+            tab.text = when (position) {
+                0 -> "Arsitektur"
+                1 -> "Proses ML"
+                2 -> "Akurasi"
+                else -> ""
+            }
+        }.attach()
     }
 
     override fun onDestroyView() {
