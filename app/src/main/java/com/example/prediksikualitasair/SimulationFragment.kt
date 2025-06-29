@@ -29,6 +29,7 @@ class SimulationFragment : Fragment() {
     private val scalerScale = floatArrayOf(
         0.02212389f, 0.01085776f, 0.00338983f, 0.00316456f, 0.0173913f, 0.01956947f, 0.3257329f, 0.04291845f, 0.00130039f
     )
+    // ===============================================================================
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -114,7 +115,7 @@ class SimulationFragment : Fragment() {
         val resultProbabilities = outputBuffer[0]
         val maxIndex = resultProbabilities.indices.maxByOrNull { resultProbabilities[it] } ?: -1
 
-        val labels = listOf("Good", "Hazardous", "Moderate", "Poor")
+        val labels = listOf("Good", "Hazardous", "Moderate", "Poor") // CONTOH: SESUAIKAN DENGAN PUNYA ANDA
 
         return if (maxIndex != -1 && maxIndex < labels.size) {
             labels[maxIndex]
